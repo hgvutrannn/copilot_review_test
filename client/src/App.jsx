@@ -11,6 +11,15 @@ function App() {
     getTasks();
   }, []);
 
+  // Code xấu: Khai báo biến nhưng không dùng
+  const matKhauBiMat = "123456"; 
+  console.log("Mật khẩu là: " + matKhauBiMat);
+
+  if (1 === 1) {
+    console.log("Điều này luôn đúng");
+  }
+
+  
   const getTasks = async () => {
     try {
       const response = await axios.get("http://localhost:5001/tasks");
@@ -43,7 +52,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Task Checker 🚀</h1>
+      <h1>Task Checker 🚀 CopiLot review 2</h1>
       <form onSubmit={addTask}>
         <input 
           type="text" 
