@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Task Checker 🚀</h1>
+      <h1>Task Checker</h1>
       <form onSubmit={addTask}>
         <input 
           type="text" 
